@@ -12,6 +12,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/about/about.module').then((m) => m.AboutModule),
   },
+  { path: 'home', loadChildren: () => import('./features/home/home.module').then(m => m.HomeModule) },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

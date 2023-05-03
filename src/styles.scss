@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+$primary: #0074d9;
+$danger: #ff4136;
+$success: #6cee16;
+@import 'bootstrap/scss/bootstrap';
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+  }
