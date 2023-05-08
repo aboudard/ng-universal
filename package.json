@@ -10,7 +10,7 @@
     "dev:ssr": "ng run ng-universal:serve-ssr",
     "serve:ssr": "node dist/ng-universal/server/main.js",
     "build:ssr": "ng build && ng run ng-universal:server",
-    "prerender": "ng run ng-universal:prerender",
+    "prerender": "ng run ng-universal:prerender --routes /users/1 --routes /users/2",
     "run:prerender": "http-server dist/ng-universal/browser"
   },
   "private": true,

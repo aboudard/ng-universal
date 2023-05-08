@@ -1,2 +1,19 @@
 <h3>Users Page</h3>
-<p>users works!</p>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+      <th scope="col"></th>
+		</tr>
+	</thead>
+  <tbody>
+    <tr *ngFor="let user of users$ | async">
+      <th scope="row">{{user.id}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td><button (click)="detailUser(user.id)" type="button" class="btn btn-primary">Detail</button></td>
+    </tr>
+  </tbody>
+</table>
