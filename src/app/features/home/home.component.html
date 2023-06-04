@@ -1,2 +1,9 @@
 <h3>Home Page</h3>
 <p>home works!</p>
+<div class="card p-2">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Bind field</label>
+    <input [(ngModel)]="bind" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <span class="m-2">{{bind}}</span>
+  </div>
+</div>
